@@ -1,0 +1,10 @@
+CREATE TABLE TBLSETTINGS (
+    ID INTEGER NOT NULL,
+    PARAMNAME VARCHAR(100),
+    PARAMVALUE VARCHAR(300));
+ALTER TABLE TBLSETTINGS
+ADD CONSTRAINT PK_TBLSETTINGS
+PRIMARY KEY (ID);
+
+insert into tblsettings (id, paramname, paramvalue)
+values (1, 'dbversion', '1.0.0.1');
